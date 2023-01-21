@@ -12,4 +12,11 @@ def setBackgroundImg(img):
 	print("IMG PATH: "+img)
 	ctypes.windll.user32.SystemParametersInfoW(20,0,img,0)
 
-setBackgroundImg(input("Bild Datei: "))
+while True:
+	imgFile=input("Bild Datei: ")
+	if(os.path.isfile(imgFile)):
+		setBackgroundImg(imgFile)
+		break
+	else:
+		print("Datei Exestirt Nicht!")
+		print("")
