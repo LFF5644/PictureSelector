@@ -14,15 +14,29 @@ file=open(configFile_imgList,"r")
 imgArray=json.loads(file.read())
 file.close()
 
+def loadJsonFile(filename):
+	file=open(configFile_imgList,"r")
+	result=json.loads(file.read())
+	file.close()
+	return result
+
 def setBackgroundImg(img):
 	if(len(img)>=2 and img[0]!="/" and img[1]!=":"):
 		img=path+pathSeb+img
 	#print("IMG PATH: "+img)
 	ctypes.windll.user32.SystemParametersInfoW(20,0,img,0)
 
-print("Programm is started!")
+imgArray=loadJsonFile(configFile_imgList)
+
+print("Programm is started!\n"+str(len(imgArray))+" Bilder Geladen!")
 while True:
 	time.sleep(10)
+	if(len(imgArray)==0):
+		print("")
+		print("Alle Bilder angezeigt! Bilder werden geldaden...")
+		imgArray=loadJsonFile(configFile_imgList)
+		print(f"Es wurden {len(imgArray)} Bilder erfolgreich geladen!\n")
 	index=random.randint(0,len(imgArray)-1)
-	print("change backgraound img to "+str(index))
+	print(f"NEUES BILD: Bild: {index}, Bilder: {len(imgArray)}")
 	setBackgroundImg(imgArray[index])
+	imgArray.pop(index)
