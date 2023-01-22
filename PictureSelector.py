@@ -30,7 +30,7 @@ imgArray=loadJsonFile(configFile_imgList)
 
 print("Programm is started!\n"+str(len(imgArray))+" Bilder Geladen!")
 while True:
-	time.sleep(10)
+	time.sleep(60*3)
 	if(len(imgArray)==0):
 		print("")
 		print("Alle Bilder angezeigt! Bilder werden geldaden...")
