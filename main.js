@@ -14,5 +14,10 @@ async function changeRandomBackground(){
 
 let imagesToShow=images.filter(Boolean);
 
-changeRandomBackground();
-setInterval(changeRandomBackground,1000*60*3);
+const fn=async ()=>{
+	const image=await changeRandomBackground();
+	console.log("new image is: "+image);
+}
+
+fn();
+setInterval(fn,1000*60*3);
