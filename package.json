@@ -1,0 +1,18 @@
+{
+	"name": "pictureselector",
+	"version": "1.0.0",
+	"description": "Diese Programm Wekselt dein Desktop Hintergrund automatisch!",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"wallpaper",
+		"change-wallpaper"
+	],
+	"author": "LFF5644",
+	"license": "ISC",
+	"dependencies": {
+		"wallpaper": "4.2.0"
+	}
+}
