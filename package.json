@@ -13,6 +13,8 @@
 	"author": "LFF5644",
 	"license": "ISC",
 	"dependencies": {
+		"socket.io": "^4.7.2",
+		"socket.io-client": "^4.7.2",
 		"wallpaper": "4.2.0"
 	}
 }

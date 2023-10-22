@@ -1,3 +1,10 @@
 # NPM
 /node_modules
 /package-lock.json
+
+# PY
+/__pycache__
+*.pyc
+
+# EDITOR
+/.vscode
