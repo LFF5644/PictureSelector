@@ -1,20 +1,29 @@
 {
-	"name": "pictureselector",
-	"version": "1.0.0",
-	"description": "Diese Programm Wekselt dein Desktop Hintergrund automatisch!",
-	"main": "main.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [
-		"wallpaper",
-		"change-wallpaper"
-	],
-	"author": "LFF5644",
-	"license": "ISC",
-	"dependencies": {
-		"socket.io": "^4.7.2",
-		"socket.io-client": "^4.7.2",
-		"wallpaper": "4.2.0"
-	}
+  "name": "picture-selector",
+  "version": "1.0.0",
+  "description": "Diese Programm Wekselt dein Desktop Hintergrund automatisch!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wallpaper",
+    "change-wallpaper"
+  ],
+  "author": "LFF5644",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "4.7.2",
+    "socket.io-client": "4.7.2",
+    "systray": "1.0.5",
+    "wallpaper": "4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LFF5644/PictureSelector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LFF5644/PictureSelector/issues"
+  },
+  "homepage": "https://github.com/LFF5644/PictureSelector#readme"
 }
