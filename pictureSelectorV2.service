@@ -1,0 +1,11 @@
+[Unit]
+Description=Wallpaper change
+After=graphical-session.target network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/lff/CODE/pictureSelector
+ExecStart=/usr/bin/node PictureSelectorV2.js
+
+[Install]
+WantedBy=default.target
