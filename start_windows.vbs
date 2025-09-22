@@ -1,1 +1,1 @@
-CreateObject("Wscript.Shell").Run "node main.js", 0
+CreateObject("Wscript.Shell").Run "node PictureSelectorV2.js", 0

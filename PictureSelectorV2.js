@@ -3,11 +3,12 @@ const fs=require("fs");
 const os=require("os");
 const wallpaper=require("wallpaper");
 
-const ICON="./sysTray.png";
 const INTERVAL_CHECK=60e3*5; // fetch every 5 min.
 const URL_API_INFO="https://lff.one/web/pictureSelector/info.api";
 const URL_API_IMAGE="https://lff.one/web/pictureSelector/image.api";
 const TMP_FOLDER=os.tmpdir()+"/PictureSelector/";
+const SYSTEM=os.type();
+const ICON="./sysTray."+(SYSTEM==="Windows_NT"?"ico":"png");
 
 let default_wallpaper=null;
 let exit=false;
